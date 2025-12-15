@@ -86,6 +86,7 @@ def run(
             stderr=True,
             environment=global_env,
             volumes=volumes,
+            cap_add = ["SYS_RESOURCE"],
         )
 
         output = ""
